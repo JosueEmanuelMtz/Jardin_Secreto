@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans';
+}
+body{
+    background: url(img/background.png);
+    font-size: 14px;
+}
+.container{
+    max-width: 1100px;
+    padding: 0 20px;
+    margin: auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.container-logo{
+    display: flex;
+    align-items: center;
+}
+.container-logo i{
+    color: #088e49;
+    font-size: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 20px;
+}
+nav ul li a{
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #088e49;
+}
+.busqueda{
+    background: #fff;
+    padding: 10px;
+    border-radius: 50px;
+}
+.busqueda i{
+    margin-left: 10px;
+}
+.busqueda input{
+    border: none;
+    outline: none;
+}
+.informacion{
+    margin-top: 50px;
+}
+.fila{
+    display: flex;
+}
+.fila .col{
+    width: 33%;
+}
+.fila .col h2{
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+.fila .col p{
+    color: #696969;
+    max-width: 300px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.fila .col span{
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.fila .col button{
+    background-color: #1f2131;
+    color: #fff;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: .5s;
+}
+.fila .col button i{
+    color: #ff7e32;
+    background: fff;
+    border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.fila .col button:hover{
+    font-size: 14px;
+}
+.fila .nos{
+    width: 60%;
+}
+.circulo-principal{
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    /* background: #f88965; */
+    background: rgb(247,164,34);
+    background: radial-gradient(circle, rgba(247,164,34,1) 0%, rgba(241,58,85,1) 100%);
+    border-radius: 50%;
+    text-align: center;
+    transition: .5s;
+}
+.circulo-principal img{
+    height: 100%;
+    position: relative;
+    bottom: 30px;
+    transition: .5s;
+}
+.circulo-principal:hover{
+    transform: scale(.9);
+    /* background-color: #1f2131; */
+    background: rgb(241,58,85);
+    background: radial-gradient(circle, rgba(241,58,85,0.9903419986158526) 0%, rgba(247,164,34,0.9987453599603904) 100%);
+   
+}
+.circulo-principal:hover img{
+    transform: scale(1.2);
+}
+.ingredientes{
+    padding-left: 50px;
+}
+.ingredientes ul{
+    list-style: none;
+
+}
+.ingredientes li{
+    margin: 10px 0;
+}
+.ingredientes li i{
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    color: #088e49;
+    margin-right: 10px;
+}
+.rectangulo{
+    border-radius: 40px 40px 0 0;
+    background-color: #1f2131;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 700px;
+    max-width: 1100px;
+    width: 100%;
+    height: 150px;
+}
+.rectangulo .circulo{
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+.rectangulo .circulo img{
+    height: 100%;
+    position: relative;
+    bottom: 10px;
+}
+.rectangulo .opcion{
+    position: relative;
+    bottom: 70px;
+    text-align: center;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+.color1{
+    /* background-color: #f88965;*/
+
+    background: rgb(247,164,34);
+    background: radial-gradient(circle, rgba(247,164,34,1) 0%, rgba(241,58,85,1) 100%);
+}
+.color2{
+    /* background-color: #f1c072; */
+    background: rgb(94,246,200);
+    background: radial-gradient(circle, rgba(94,246,200,1) 0%, rgba(176,58,241,1) 100%);
+}
+.color3{
+    background: rgb(237,123,243);
+    background: radial-gradient(circle, rgba(237,123,243,1) 22%, rgba(240,46,110,1) 100%);
+}
+.color4{
+    background: rgb(247,255,102);
+    background: radial-gradient(circle, rgba(247,255,102,1) 15%, rgba(179,255,73,1) 100%);
+
+}
+.rectangulo .opcion:hover{
+    bottom: 90px;
+}
+.rectangulo .opcion .puntuacion{
+    background-color: #fff;
+    width: fit-content;
+    color: #000;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 5px;
+}
+.rectangulo .opcion h3{
+    padding: 5px;
+}
+.rectangulo .opcion a{
+    text-decoration: none;
+    color: #398969;
+}
+.rectangulo .opcion a:hover{
+    color: #3bfe00;
+}
+
+.logo {
+    width: 100px;  /* Cambia este valor para ajustar el tamaño */
+    height: auto;  /* Mantiene la proporción */
+}
+
+.rectangulo1{
+    border-radius: 40px 40px 40px 40px;
+    background-color: #1f2131;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 290px;
+    max-width: 1100px;
+    width: 100%;
+    height: 150px;
+}
+.rectangulo1 .circulo{
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+.rectangulo1 .circulo img{
+    height: 100%;
+    position: relative;
+    bottom: 10px;
+}
+.rectangulo1 .opcion{
+    position: relative;
+    bottom: 70px;
+    text-align: center;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+.rectangulo1 .opcion:hover{
+    bottom: 90px;
+}
+.rectangulo1 .opcion .puntuacion{
+    background-color: #fff;
+    width: fit-content;
+    color: #000;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 5px;
+}
+.rectangulo1 .opcion h3{
+    padding: 5px;
+}
+.rectangulo1 .opcion a{
+    text-decoration: none;
+    color: #398969;
+}
+.rectangulo1 .opcion a:hover{
+    color: #3bfe00;
+}
+
+.rectangulo2{
+    border-radius: 40px 40px 40px 40px;
+    background-color: #1f2131;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 590px;
+    max-width: 1100px;
+    width: 100%;
+    height: 150px;
+}
+.rectangulo2 .circulo{
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+.rectangulo2 .circulo img{
+    height: 100%;
+    position: relative;
+    bottom: 10px;
+}
+.rectangulo2 .opcion{
+    position: relative;
+    bottom: 70px;
+    text-align: center;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+.rectangulo2 .opcion:hover{
+    bottom: 90px;
+}
+.rectangulo2 .opcion .puntuacion{
+    background-color: #fff;
+    width: fit-content;
+    color: #000;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 5px;
+}
+.rectangulo2 .opcion h3{
+    padding: 5px;
+}
+.rectangulo2 .opcion a{
+    text-decoration: none;
+    color: #398969;
+}
+.rectangulo2 .opcion a:hover{
+    color: #3bfe00;
+}
+
+
+.rectangulo3{
+    border-radius: 40px 40px 40px 40px;
+    background-color: #1f2131;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 190px;
+    max-width: 1100px;
+    width: 100%;
+    height: 150px;
+}
+.rectangulo3 .circulo{
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+.rectangulo3 .circulo img{
+    height: 100%;
+    position: relative;
+    bottom: 10px;
+}
+.rectangulo3 .opcion{
+    position: relative;
+    bottom: 70px;
+    text-align: center;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+.rectangulo3 .opcion:hover{
+    bottom: 90px;
+}
+.rectangulo3 .opcion .puntuacion{
+    background-color: #fff;
+    width: fit-content;
+    color: #000;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 5px;
+}
+.rectangulo3 .opcion h3{
+    padding: 5px;
+}
+.rectangulo3 .opcion a{
+    text-decoration: none;
+    color: #398969;
+}
+.rectangulo3 .opcion a:hover{
+    color: #3bfe00;
+}
+.rectangulo3{
+    border-radius: 40px 40px 40px 40px;
+    background-color: #1f2131;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 890px;
+    max-width: 1100px;
+    width: 100%;
+    height: 150px;
+}
+.rectangulo3 .circulo{
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+.rectangulo3 .circulo img{
+    height: 100%;
+    position: relative;
+    bottom: 10px;
+}
+.rectangulo3 .opcion{
+    position: relative;
+    bottom: 70px;
+    text-align: center;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+.rectangulo3 .opcion:hover{
+    bottom: 90px;
+}
+.rectangulo3 .opcion .puntuacion{
+    background-color: #fff;
+    width: fit-content;
+    color: #000;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 5px;
+}
+.rectangulo3 .opcion h3{
+    padding: 5px;
+}
+.rectangulo3 .opcion a{
+    text-decoration: none;
+    color: #398969;
+}
+.rectangulo3 .opcion a:hover{
+    color: #3bfe00;
+}
+
+
+.rectangulo4{
+    border-radius: 40px 40px 40px 40px;
+    background-color: #1f2131;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1190px;
+    max-width: 1100px;
+    width: 100%;
+    height: 150px;
+}
+.rectangulo4 .circulo{
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+.rectangulo4 .circulo img{
+    height: 100%;
+    position: relative;
+    bottom: 10px;
+}
+.rectangulo4 .opcion{
+    position: relative;
+    bottom: 70px;
+    text-align: center;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+.rectangulo4 .opcion:hover{
+    bottom: 90px;
+}
+.rectangulo4 .opcion .puntuacion{
+    background-color: #fff;
+    width: fit-content;
+    color: #000;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 5px;
+}
+.rectangulo4 .opcion h3{
+    padding: 5px;
+}
+.rectangulo4 .opcion a{
+    text-decoration: none;
+    color: #398969;
+}
+.rectangulo4 .opcion a:hover{
+    color: #3bfe00;
+}
+
+.rectangulo5{
+    border-radius: 40px 40px 40px 40px;
+    background-color: #1f2131;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1490px;
+    max-width: 1100px;
+    width: 100%;
+    height: 150px;
+}
+.rectangulo5 .circulo{
+    width: 150px;
+    margin: auto;
+    height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+}
+.rectangulo5 .circulo img{
+    height: 100%;
+    position: relative;
+    bottom: 10px;
+}
+.rectangulo5 .opcion{
+    position: relative;
+    bottom: 70px;
+    text-align: center;
+    color: #fff;
+    transition: .5s;
+    cursor: pointer;
+}
+.rectangulo5 .opcion:hover{
+    bottom: 90px;
+}
+.rectangulo5 .opcion .puntuacion{
+    background-color: #fff;
+    width: fit-content;
+    color: #000;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 14px;
+    padding: 3px;
+    border-radius: 5px;
+}
+.rectangulo5 .opcion h3{
+    padding: 5px;
+}
+.rectangulo5 .opcion a{
+    text-decoration: none;
+    color: #398969;
+}
+.rectangulo5 .opcion a:hover{
+    color: #3bfe00;
+}
+.fila .col1 p{
+    color: #696969;
+    max-width: 800px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}

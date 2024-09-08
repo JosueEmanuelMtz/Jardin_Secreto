@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>JARDÍN SECRETO</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado -->
+        <header>
+            <div class="container-logo">
+                <!-- <i class="fa-regular fa-circle-dot"></i> -->
+                <img src="img/logo.png" alt="" class="logo">
+                <h1>JARDÍN SECRETO</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="Index.html">INICIO</a></li>
+                    <li><a href="SobreNosotros.html">SOBRE NOSOTROS</a></li>
+                    <li><a href="Cuidados.html">CUIDADOS</a></li>
+                    <li><a href="Contacto.html">CONTACTANOS</a></li>
+                </ul>
+            </nav>
+            <div class="busqueda">
+                <img src="img/Buscar.png" alt="" class="logo">
+            </div>
+        </header>
+
+        <!-- INFORMACION -->
+        <div class="informacion">
+            <div class="fila">
+                <!-- columna izquierda -->
+                <div class="col">
+                    <h2 id="nombre">JARDÍN <br> SECRETO</h2>
+                    <p id="descripcion">
+                        En Jardín secreto, creemos que las plantas son vida. Fomentamos el cuidado y amor por ellas, inspirando a crear espacios verdes que embellecen y mejoran el bienestar, conectándonos con la naturaleza.
+                    </p>
+                    <!-- <span id="precio">$ 8.60</span> -->
+                    <!-- <button>
+                        Comprar Ahora
+                        <i class="fa-solid fa-circle-chevron-right"></i>
+                    </button> -->
+                </div>
+
+                <!-- Columna Central -->
+                <div class="col">
+                    <div class="circulo-principal" id="circulo">
+                        <img src="img/logo1.png" alt="" id="fotoPrincipal">
+                    </div>
+                </div>
+
+                <!-- Columna derecha -->
+                <div class="col ingredientes">
+                    <ul id="ingredientes">
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Planta de interior
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Crecimiento de hasta 6 metros si se cultiva en suelo
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            lugares con mucha iluminación, evitando la exposición directa al sol.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            trasplantada o se cambie la tierra de su maceta cada 2 a 3 años.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Abono mezcla de turba y humus líquido disuelto en agua.
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            planta medicinal
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-check"></i>
+                            Según el feng shui, atrae la buena suerte.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="rectangulo">
+            <div class="opcion" onclick="cargar(1)">
+                <div class="circulo color1">
+                    <img src="img/f1.png" alt="">
+                    <div class="puntuacion">
+                        4.9 <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <h3>Palo de brasil</h3>
+                <a href="https://drive.google.com/file/d/1d7CWx1mjdlFgiXU9f-oZRIvnx3PFf25l/view?usp=drive_link">Mas información +</a>
+            </div>
+            <div class="opcion" onclick="cargar(2)">
+                <div class="circulo color2">
+                    <img src="img/f2.png" alt="">
+                    <div class="puntuacion">
+                        4.9 <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <h3>Suculentas</h3>
+                <a href="Cuidados.html">Mas información +</a>
+            </div>
+            <div class="opcion" onclick="cargar(3)">
+                <div class="circulo color3">
+                    <img src="img/f3.png" alt="">
+                    <div class="puntuacion">
+                        4.9 <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <h3>Cuna de moisés</h3>
+                <a href="https://drive.google.com/file/d/1yHo1aK3TdfmJ7mQkMmTHt4G9gYV3GUZJ/view?usp=drive_link">Mas información +</a>
+            </div>
+            <div class="opcion" onclick="cargar(4)">
+                <div class="circulo color4">
+                    <img src="img/f4.png" alt="">
+                    <div class="puntuacion">
+                        4.9 <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                <h3>Planta teléfono</h3>
+                <a href="https://drive.google.com/file/d/1OINWUpPllJq2_4G2lyDZZzzkaI2HHawF/view?usp=drive_link">Mas información +</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
